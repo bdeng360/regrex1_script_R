@@ -1,14 +1,12 @@
 library(dplyr)
-
 library(ggplot2)
-
 library(reshape2)
-
 library(tidyverse)
-
+library(sys)
 library(readr)
 
-regrex <- read.csv("https://raw.githubusercontent.com/bdeng360/regrex1_in_R/main/regrex1.csv")
+regrex <- read.csv(sys.argv[1])
+"loading {}".format(sys.argv[1])
 
 regrex
 
